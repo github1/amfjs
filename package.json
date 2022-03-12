@@ -1,8 +1,12 @@
 {
-  "name": "amfjs",
+  "name": "@github1/amfjs",
   "description": "AMFJS is an AMF Client JavaScript library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Emil Malinov <emilkm@gmail.com> (http://github.com/emilkm)",
+  "scripts": {
+    "test": "cd test && node read.js && node write.js",
+    "prepublishOnly": "npm run test"
+  },
   "devDependencies": {
     "tape": "^4.6.2"
   }
